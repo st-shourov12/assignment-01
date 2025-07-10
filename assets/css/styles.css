@@ -219,3 +219,70 @@ h6.review-title {
 }
 
 /* =====Focus Section===== */
+
+.focus-section{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(245, 248, 255);
+    padding: 71px 150px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.focus-title{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.focus-description{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+
+.img-container img{
+    border-radius: 48px;
+}
+
+/* =====form section===== */
+
+.form-section{
+    padding: 71px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 115px;
+    align-items: center;
+}
+
+.form-column{
+    width: 50%;
+}
+
+.form-title{
+    font-size: 97px;
+    line-height: 1.2;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    padding: 20px 32px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+form label{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
