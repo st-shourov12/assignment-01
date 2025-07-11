@@ -50,7 +50,7 @@ p{
 
 .btn-primary:hover{
     cursor: pointer;
-    background: rgb(71, 65, 220);
+    background: #0d6efd;
     transform: scale(1.1);
     color: #ffffff;
 }
@@ -62,7 +62,7 @@ p{
 }
 
 .logo:hover{
-    color: chartreuse;
+    color: #dc3545	;
 }
 
 
@@ -179,7 +179,7 @@ main section{
 }
 
 .primary:hover{
-    color:chartreuse
+    color:#dc3545;
 }
 
 
@@ -368,7 +368,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     cursor: pointer;
-    background: rgb(71, 65,220);
+    background: #0d6efd;
     transform: scale(1.1);
     color: #ffffff;
 }
@@ -394,21 +394,23 @@ ul {
     gap: 48px;
     margin-top: 20px;
     padding-left: 0;
+    flex-wrap: wrap;
 }
 
 ul li{
-    padding: 10px 10px;
+    padding: 10px 20px;
     border-radius: 10px;
+    color: rgb(137, 135, 161);
 }
 
 li a {
     text-decoration: none;
-    color: rgb(137, 135, 161);
+    color: inherit;
 }
 
 
-li:hover, li a:hover{
-    background-color: chartreuse;
+li:hover{
+    background-color: rgb(78, 71, 255);
     cursor: pointer;
     color: rgb(255, 255, 255);
     
