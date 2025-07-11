@@ -5,12 +5,17 @@
 }
 
 body{
-    width: 1440px;
-    margin: 0 auto;
+    /* width: 1440px;
+    margin: 0 auto; */
     font-family: "Inter", sans-serif;
     color: rgb(37, 36, 50);
 }
 
+
+.header, main section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 p{
     color: rgba(37, 36, 50, 0.5);
 }
@@ -64,11 +69,13 @@ p{
 /* =========HEADER========= */
 
 header{
-    padding: 0px 150px 150px;
     background-image: url("../img/Hero-bg.png");
     background-repeat: repeat;
 }
 
+.header{
+    padding: 0px 150px 150px;
+}
 .header-nav{
     padding: 50px 0;
     display: flex;
@@ -93,6 +100,8 @@ header{
     text-align: center;
     gap: 37px;
     margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .hero-title{
@@ -100,6 +109,7 @@ header{
     margin-left: 117px;
     margin-right: 117px;
     margin: 0;
+    line-height: 76px;
 }
 
 /* =======main======= */
@@ -235,12 +245,36 @@ h6.review-title {
 
 .reviewer-box{
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer-box img{
+    border-radius: 50%;
+}
+
+.reviewer-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-info .reviewer-name{
+    font-size: 12px;
     font-weight: 600;
     line-height: 140%;
     color: rgb(117, 117, 117);
+
+
 }
 
+.reviewer-info .review-date{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    color: rgb(179, 179, 179);
+}
 
 .review-card:hover{
     background-color: rgb(71, 218, 255);
@@ -271,6 +305,9 @@ h6.review-title {
     margin-bottom: 20px;
 }
 
+.img-container{
+    margin-top: 20px;
+}
 .img-container img{
     border-radius: 48px;
 }
@@ -372,12 +409,31 @@ li:hover, li a:hover{
 
 /* responsive */
 
-@media (min-width:1440) {
-    body,header{
-        width: 100%;
+@media (max-width:840px) {
+    .action, .user-stat-container, footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
     }
-    .header{
-        max-width: 1140px;
-        margin: 0 auto;
+
+    main section{
+        padding: 40px 60px;
     }
+
+    
+}
+
+@media (max-width:925px) {
+    .user-stat-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    
 }
