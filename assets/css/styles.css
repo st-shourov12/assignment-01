@@ -353,6 +353,11 @@ input[type="text"], input[type="email"], textarea{
     font-family: "Inter", sans-serif;
     border: none;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+    transform: scale(1.1);
 }
 
 form label{
@@ -404,6 +409,7 @@ ul li{
 }
 
 li a {
+    width: 100%;
     text-decoration: none;
     color: inherit;
 }
@@ -427,6 +433,9 @@ li:hover{
     gap: 60px;
     }
 
+    footer section{
+        padding: 104px 150px;
+    }
 }
 
 @media (max-width:940px) {
@@ -478,6 +487,10 @@ li:hover{
     footer section{
         padding: 40px;
         text-align: center;
+    }
+
+    ul{
+        gap: 20px;
     }
 
     .form-column{
