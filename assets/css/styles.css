@@ -118,7 +118,7 @@ main{
     background-color: rgb(245, 248, 255);
 }
 main section{
-    padding: 120px 150px;
+    padding: 60px 150px;
 }
 
 
@@ -129,6 +129,7 @@ main section{
     justify-content: space-between;
     align-items: center;
     gap: 220px;
+    margin: 60px 0;
 }
 
 .action-title{
@@ -289,6 +290,11 @@ h6.review-title {
     padding: 71px 150px;
     border-radius: 14px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .focus-title{
@@ -307,9 +313,11 @@ h6.review-title {
 
 .img-container{
     margin-top: 20px;
+    width: 100%;
 }
 .img-container img{
     border-radius: 48px;
+    width: 85%;
 }
 
 /* =====form section===== */
@@ -403,37 +411,5 @@ li:hover, li a:hover{
     background-color: chartreuse;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    
-}
-
-
-/* responsive */
-
-@media (max-width:840px) {
-    .action, .user-stat-container, footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 40px;
-    }
-
-    main section{
-        padding: 40px 60px;
-    }
-
-    
-}
-
-@media (max-width:925px) {
-    .user-stat-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 40px;
-    }
     
 }
